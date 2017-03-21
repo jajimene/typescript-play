@@ -2,6 +2,10 @@
 let myAdd: (baseValue:number, increment:number) => number =
     function(x, y) { return x + y; };
 
+console.log(myAdd(5, 12));
+
+////////////////////////////////////////////////////////////////////////////////
+
 function buildName(firstName: string, lastName?: string, title: string = 'Mr.') {
     if (lastName)
         return title + ' ' + firstName + ' ' + lastName;
@@ -9,7 +13,6 @@ function buildName(firstName: string, lastName?: string, title: string = 'Mr.') 
         return title + ' ' + firstName;
 }
 
-console.log(myAdd(5, 12));
 console.log(buildName('Santos'));
 console.log(buildName('Santos', 'Jiménez'));
 console.log(buildName('Pepa', 'Pérez', 'Mrs.'));
