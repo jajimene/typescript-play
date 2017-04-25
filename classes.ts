@@ -64,11 +64,11 @@ class Employee extends Person {
 
 let howard = new Employee("Howard", "Sales");
 console.log(howard.getElevatorPitch());
-// console.log(howard.name); // error
+console.log(howard.name); // error
 
 ///////////////////////////////////////////////////////////////////////////
 
-let passcode = "secret passcode";
+let passcode = "secret passcode 2";
 
 class Employee2 {
     private _fullName: string;

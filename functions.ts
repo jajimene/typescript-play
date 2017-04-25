@@ -16,3 +16,4 @@ function buildName(firstName: string, lastName?: string, title: string = 'Mr.') 
 console.log(buildName('Santos'));
 console.log(buildName('Santos', 'Jiménez'));
 console.log(buildName('Pepa', 'Pérez', 'Mrs.'));
+console.log(buildName('Pepa', null, 'Mrs.'));

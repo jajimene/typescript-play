@@ -3,3 +3,5 @@ let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 // as syntax
 let strLengthB: number = (someValue as string).length;
+
+console.log(strLengthB);
