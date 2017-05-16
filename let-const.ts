@@ -55,3 +55,8 @@ let foo = [1, 2];
 let bar = [3, 4];
 let bothPlus = [0, ...foo, ...bar, 5];
 // bothPlus = [0, 1, 2, 3, 4, 5];
+
+
+// Spread objects
+let defaults = { food: "spicy", price: "$$", ambiance: "noisy" };
+let search = { ...defaults, food: "rich" };
