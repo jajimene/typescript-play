@@ -44,3 +44,46 @@ interface Point {
 
 let p1: Point = { x: 10, y: 20 };
 p1.x = 5; // error!
+
+///////////////////////////////////////////////////////////////
+
+interface SearchFunc {
+    (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+    let result = source.search(subString);
+    return result > -1;
+}
+
+let mySearch2: SearchFunc;
+mySearch2 = function(src: string, sub: string): boolean {
+    let result = src.search(sub);
+    return result > -1;
+}
+
+///////////////////////////////////////////////////////////////
+
+interface ClockInterface {
+    currentTime: Date;
+}
+
+class Clock implements ClockInterface {
+    currentTime: Date;
+    constructor(h: number, m: number) { }
+}
+
+interface ClockInterface2 {
+    currentTime: Date;
+    setTime(d: Date);
+}
+
+class Clock2 implements ClockInterface2 {
+    currentTime: Date;
+    setTime(d: Date) {
+        this.currentTime = d;
+    }
+    constructor(h: number, m: number) { }
+}
+
