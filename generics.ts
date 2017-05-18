@@ -26,3 +26,29 @@ function loggingIdentity2<T>(arg: T[]): T[] {
     console.log(arg.length);  // Array has a .length, so no more error
     return arg;
 }
+
+//////////////////////////////////////////////////////////////////////////////
+
+interface GenericIdentityFn {
+    <T>(arg: T): T;
+}
+
+function identity4<T>(arg: T): T {
+    return arg;
+}
+
+let myIdentity: GenericIdentityFn = identity4;
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+// we now will also need to specify the corresponding type argument (here: number)
+interface GenericIdentityFn2<T> {
+    (arg: T): T;
+}
+
+function identity5<T>(arg: T): T {
+    return arg;
+}
+
+let myIdentity2: GenericIdentityFn2<number> = identity5;
