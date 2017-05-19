@@ -31,16 +31,17 @@ const kitty = {
 }
 
 // Error
-kitty = {
+/*kitty = {
     name: "Danielle",
     numLives: numLivesForCat
-};
+};*/
 
 // all "okay"
 kitty.name = "Rory";
 kitty.name = "Kitty";
 kitty.name = "Cat";
 kitty.numLives--;
+console.log(kitty);
 
 
 //********************* Destructuring **********************
@@ -55,8 +56,9 @@ let foo = [1, 2];
 let bar = [3, 4];
 let bothPlus = [0, ...foo, ...bar, 5];
 // bothPlus = [0, 1, 2, 3, 4, 5];
+console.log(bothPlus);
 
 
 // Spread objects
 let defaults = { food: "spicy", price: "$$", ambiance: "noisy" };
-let search = { ...defaults, food: "rich" };
+let search = { ...defaults, food: "rich", foo: true };

@@ -16,7 +16,7 @@ function buildName(firstName: string, lastName?: string, title: string = 'Mr.') 
 console.log(buildName('Santos'));
 console.log(buildName('Santos', 'Jiménez'));
 console.log(buildName('Pepa', 'Pérez', 'Mrs.'));
-console.log(buildName('Pepa', null, 'Mrs.'));
+console.log(buildName('Pepa', undefined, 'Mrs.'));
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -25,6 +25,7 @@ function buildName2(firstName: string, ...restOfName: string[]) {
 }
 
 let employeeName = buildName2("Joseph", "Samuel", "Lucas", "MacKinzie");
+console.log(employeeName);
 
 ///////////////////////////////////////////////////////////////
 
