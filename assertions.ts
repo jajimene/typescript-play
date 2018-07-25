@@ -1,4 +1,4 @@
-let someValue: any = "this is a string";
+let someValue: any = 'this is a string';
 // angle-bracket syntax
 let strLength: number = (<string>someValue).length;
 // as syntax
